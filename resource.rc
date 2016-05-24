@@ -1,0 +1,296 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 539, 345
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT | WS_EX_CONTROLPARENT
+FONT 10, "黑体"
+BEGIN
+    LISTBOX         IDC_MusicList,8,66,169,247,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_PlayEdit,1,3,180,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NOHIDESEL | ES_READONLY | NOT WS_BORDER
+    PUSHBUTTON      "7",IDC_LastSong,44,45,21,17
+    PUSHBUTTON      "8",IDC_NextSong,100,45,21,17
+    EDITTEXT        IDC_MusicTotalTime,151,27,22,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_MusicNowTime,0,29,22,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    CONTROL         "Slider1",IDC_ProgressBar,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,1,19,
+                    175,9,WS_EX_ACCEPTFILES | WS_EX_TRANSPARENT
+    CONTROL         "Slider1",IDC_Volume,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,139,37,37,9
+    COMBOBOX        IDC_PlayMode,129,49,48,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES | 
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "添加",IDC_Add,68,318,32,18
+    PUSHBUTTON      "定位",IDC_Location,10,319,32,18
+    PUSHBUTTON      "X",IDC_Voice,126,33,12,14
+    EDITTEXT        IDC_EDIT33,231,109,267,79,ES_CENTER | ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT11,230,209,266,97,ES_CENTER | ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT22,230,190,267,19,ES_CENTER | ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    PUSHBUTTON      "皮肤",IDC_Skin,469,0,32,18
+    PUSHBUTTON      "4",IDC_Pause,68,40,30,23
+    PUSHBUTTON      "<",IDC_Extend,165,318,12,16
+    PUSHBUTTON      "迷你",IDC_Mini,21,50,18,12
+    EDITTEXT        IDC_Cannotshow,230,154,234,21,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    PUSHBUTTON      "搜索",IDC_SearchLocal,125,318,32,18
+    EDITTEXT        IDC_SearchEdit,8,299,151,17,ES_AUTOHSCROLL,
+                    WS_EX_ACCEPTFILES
+    PUSHBUTTON      "搜",IDC_Searchbutton,159,299,17,18
+    EDITTEXT        IDC_EDITsongname,256,30,197,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "网络搜索",IDC_NetSearch,434,0,34,18
+    PUSHBUTTON      "GO",IDC_GO,453,31,20,14
+END
+
+IDD_Skin DIALOGEX 0, 0, 113, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "皮肤选择"
+FONT 10, "微软雅黑"
+BEGIN
+    COMBOBOX        IDC_ComboSkin,29,16,57,13,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES | 
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "应用",IDC_Applied,38,35,41,14
+END
+
+IDD_Setting DIALOGEX 0, 0, 180, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 11, "宋体"
+BEGIN
+    COMBOBOX        IDC_Combosoundmode,132,22,41,16,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES | 
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "确定",IDC_OK,41,101,28,16
+    PUSHBUTTON      "取消",IDC_Cancel,107,100,28,16
+    EDITTEXT        IDC_Track,125,7,48,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+END
+
+IDD_DeskLrc DIALOG DISCARDABLE  0, 0, 538, 50
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "1"
+FONT 10, "System"
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 537
+    END
+
+    IDD_Skin, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 106
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_Setting, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DeskLrc, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 531
+        BOTTOMMARGIN, 46
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1 24 DISCARDABLE 
+BEGIN
+    0x3f3c, 0x6d78, 0x206c, 0x6576, 0x7372, 0x6f69, 0x3d6e, 0x3122, 0x302e, 
+    0x2022, 0x6e65, 0x6f63, 0x6964, 0x676e, 0x223d, 0x5455, 0x2d46, 0x2238, 
+    0x7320, 0x6174, 0x646e, 0x6c61, 0x6e6f, 0x3d65, 0x7922, 0x7365, 0x3f22, 
+    0x203e, 0x0a0d, 0x613c, 0x7373, 0x6d65, 0x6c62, 0x2079, 0x0a0d, 0x6d78, 
+    0x6e6c, 0x3d73, 0x7522, 0x6e72, 0x733a, 0x6863, 0x6d65, 0x7361, 0x6d2d, 
+    0x6369, 0x6f72, 0x6f73, 0x7466, 0x632d, 0x6d6f, 0x613a, 0x6d73, 0x762e, 
+    0x2231, 0x0d20, 0x6d0a, 0x6e61, 0x6669, 0x7365, 0x5674, 0x7265, 0x6973, 
+    0x6e6f, 0x223d, 0x2e31, 0x2230, 0x0d3e, 0x3c0a, 0x7361, 0x6573, 0x626d, 
+    0x796c, 0x6449, 0x6e65, 0x6974, 0x7974, 0x0d20, 0x700a, 0x6f72, 0x6563, 
+    0x7373, 0x726f, 0x7241, 0x6863, 0x7469, 0x6365, 0x7574, 0x6572, 0x223d, 
+    0x3878, 0x2236, 0x0d20, 0x760a, 0x7265, 0x6973, 0x6e6f, 0x223d, 0x2e35, 
+    0x2e31, 0x2e30, 0x2230, 0x0a0d, 0x7974, 0x6570, 0x223d, 0x6977, 0x336e, 
+    0x2232, 0x0a0d, 0x616e, 0x656d, 0x223d, 0x6574, 0x7473, 0x652e, 0x6578, 
+    0x2f22, 0x0d3e, 0x3c0a, 0x6564, 0x6373, 0x6972, 0x7470, 0x6f69, 0x3e6e, 
+    0x6554, 0x7473, 0x4120, 0x7070, 0x696c, 0x6163, 0x6974, 0x6e6f, 0x2f3c, 
+    0x6564, 0x6373, 0x6972, 0x7470, 0x6f69, 0x3e6e, 0x0a0d, 0x643c, 0x7065, 
+    0x6e65, 0x6564, 0x636e, 0x3e79, 0x0a0d, 0x643c, 0x7065, 0x6e65, 0x6564, 
+    0x746e, 0x7341, 0x6573, 0x626d, 0x796c, 0x0d3e, 0x3c0a, 0x7361, 0x6573, 
+    0x626d, 0x796c, 0x6449, 0x6e65, 0x6974, 0x7974, 0x0a0d, 0x7974, 0x6570, 
+    0x223d, 0x6977, 0x336e, 0x2232, 0x0a0d, 0x616e, 0x656d, 0x223d, 0x694d, 
+    0x7263, 0x736f, 0x666f, 0x2e74, 0x6957, 0x646e, 0x776f, 0x2e73, 0x6f43, 
+    0x6d6d, 0x6e6f, 0x432d, 0x6e6f, 0x7274, 0x6c6f, 0x2273, 0x0a0d, 0x6576, 
+    0x7372, 0x6f69, 0x3d6e, 0x3622, 0x302e, 0x302e, 0x302e, 0x0d22, 0x700a, 
+    0x6275, 0x696c, 0x4b63, 0x7965, 0x6f54, 0x656b, 0x3d6e, 0x3622, 0x3935, 
+    0x6235, 0x3436, 0x3431, 0x6334, 0x6663, 0x6431, 0x2266, 0x0a0d, 0x616c, 
+    0x676e, 0x6175, 0x6567, 0x223d, 0x222a, 0x0a0d, 0x7270, 0x636f, 0x7365, 
+    0x6f73, 0x4172, 0x6372, 0x6968, 0x6574, 0x7463, 0x7275, 0x3d65, 0x7822, 
+    0x3638, 0x2f22, 0x0d3e, 0x3c0a, 0x642f, 0x7065, 0x6e65, 0x6564, 0x746e, 
+    0x7341, 0x6573, 0x626d, 0x796c, 0x0d3e, 0x3c0a, 0x642f, 0x7065, 0x6e65, 
+    0x6564, 0x636e, 0x3e79, 0x0a0d, 0x2f3c, 0x7361, 0x6573, 0x626d, 0x796c, 
+    "\076" 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    MENUITEM "文件",                        65535
+    MENUITEM "添加文件",                    IDC_AddFile
+    MENUITEM "添加文件夹",                  IDC_AddFloder
+END
+
+IDR_MENU2 MENU DISCARDABLE 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "添加",                        IDC_AddFile
+        MENUITEM "添加文件夹",                  IDC_AddFloder
+    END
+END
+
+IDR_MENU3 MENU DISCARDABLE 
+BEGIN
+    POPUP "1"
+    BEGIN
+        MENUITEM "暂停\\播放",                  IDR_Pause
+        MENUITEM "上一曲",                      IDR_LastSong
+        MENUITEM "下一曲",                      IDR_NextSong
+        MENUITEM "还原",                        IDR_Recover
+        MENUITEM "退出",                        IDR_Close
+    END
+END
+
+IDR_MENU4 MENU DISCARDABLE 
+BEGIN
+    POPUP "2"
+    BEGIN
+        MENUITEM "播放",                        IDR_Play
+        MENUITEM "删除",                        IDR_Delete
+        MENUITEM "清空列表",                    IDR_DeleteAll
+        MENUITEM "快速定位",                    IDR_Location
+        MENUITEM "获取歌曲信息",                IDR_GetSongMessage
+    END
+END
+
+IDR_MENU5 MENU DISCARDABLE 
+BEGIN
+    POPUP "1"
+    BEGIN
+        MENUITEM "纯黑A",                       IDR_chunheiA
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+1                       ICON    DISCARDABLE     "www.ico.la_6b97ad71e475ee207a36a34e3c20ec9f_48X48.ico"
+IDI_ICON                ICON    DISCARDABLE     "icon1.ico"
+IDI_ICON2               ICON    DISCARDABLE     "icon2.ico"
+IDI_ICON3               ICON    DISCARDABLE     "icon3.ico"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
